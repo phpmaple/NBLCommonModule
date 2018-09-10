@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ttt {
+public class ttt {
     func test() {
         print("111")
     }
