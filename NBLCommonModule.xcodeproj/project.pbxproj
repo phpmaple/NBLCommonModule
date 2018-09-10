@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2327CB5A309B45575486D6E9 /* Pods_NBLCommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 154B11BDF6A48292B7F7F74F /* Pods_NBLCommonModule.framework */; };
 		737F8C4D2146539100DD522A /* NBLCommonModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737F8C432146539100DD522A /* NBLCommonModule.framework */; };
 		737F8C522146539100DD522A /* NBLCommonModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F8C512146539100DD522A /* NBLCommonModuleTests.swift */; };
 		737F8C542146539100DD522A /* NBLCommonModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 737F8C462146539100DD522A /* NBLCommonModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		737F8C6C2146549100DD522A /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F8C6B2146549100DD522A /* test.swift */; };
+		7C9A9A7715FF9CFD4E111927 /* Pods_NBLCommonModuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7DCF126D8B32729FEC1C34 /* Pods_NBLCommonModuleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1520A88478688FF7D17695D4 /* Pods-NBLCommonModuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBLCommonModuleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBLCommonModuleTests/Pods-NBLCommonModuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		154B11BDF6A48292B7F7F74F /* Pods_NBLCommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBLCommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5320D04DE642E38951FCB778 /* Pods-NBLCommonModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBLCommonModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBLCommonModule/Pods-NBLCommonModule.release.xcconfig"; sourceTree = "<group>"; };
+		72A12AE4994973E95B7DAD9F /* Pods-NBLCommonModuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBLCommonModuleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBLCommonModuleTests/Pods-NBLCommonModuleTests.release.xcconfig"; sourceTree = "<group>"; };
 		737F8C432146539100DD522A /* NBLCommonModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBLCommonModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		737F8C462146539100DD522A /* NBLCommonModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBLCommonModule.h; sourceTree = "<group>"; };
 		737F8C472146539100DD522A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +37,8 @@
 		737F8C512146539100DD522A /* NBLCommonModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBLCommonModuleTests.swift; sourceTree = "<group>"; };
 		737F8C532146539100DD522A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		737F8C6B2146549100DD522A /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		BD7DCF126D8B32729FEC1C34 /* Pods_NBLCommonModuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NBLCommonModuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E017F79AB427E5C36E922DFF /* Pods-NBLCommonModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBLCommonModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBLCommonModule/Pods-NBLCommonModule.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2327CB5A309B45575486D6E9 /* Pods_NBLCommonModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +55,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				737F8C4D2146539100DD522A /* NBLCommonModule.framework in Frameworks */,
+				7C9A9A7715FF9CFD4E111927 /* Pods_NBLCommonModuleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B452631CE4BF424A662D968 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				154B11BDF6A48292B7F7F74F /* Pods_NBLCommonModule.framework */,
+				BD7DCF126D8B32729FEC1C34 /* Pods_NBLCommonModuleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		737F8C392146539100DD522A = {
 			isa = PBXGroup;
 			children = (
 				737F8C452146539100DD522A /* NBLCommonModule */,
 				737F8C502146539100DD522A /* NBLCommonModuleTests */,
 				737F8C442146539100DD522A /* Products */,
+				75FFDFC30CE4FB3AFDDFF030 /* Pods */,
+				1B452631CE4BF424A662D968 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +110,17 @@
 			path = NBLCommonModuleTests;
 			sourceTree = "<group>";
 		};
+		75FFDFC30CE4FB3AFDDFF030 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E017F79AB427E5C36E922DFF /* Pods-NBLCommonModule.debug.xcconfig */,
+				5320D04DE642E38951FCB778 /* Pods-NBLCommonModule.release.xcconfig */,
+				1520A88478688FF7D17695D4 /* Pods-NBLCommonModuleTests.debug.xcconfig */,
+				72A12AE4994973E95B7DAD9F /* Pods-NBLCommonModuleTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -107,6 +139,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 737F8C572146539100DD522A /* Build configuration list for PBXNativeTarget "NBLCommonModule" */;
 			buildPhases = (
+				3A4617C82ED6E883E696F762 /* [CP] Check Pods Manifest.lock */,
 				737F8C3E2146539100DD522A /* Sources */,
 				737F8C3F2146539100DD522A /* Frameworks */,
 				737F8C402146539100DD522A /* Headers */,
@@ -125,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 737F8C5A2146539100DD522A /* Build configuration list for PBXNativeTarget "NBLCommonModuleTests" */;
 			buildPhases = (
+				EEF9389808B0ADB1350E9031 /* [CP] Check Pods Manifest.lock */,
 				737F8C482146539100DD522A /* Sources */,
 				737F8C492146539100DD522A /* Frameworks */,
 				737F8C4A2146539100DD522A /* Resources */,
+				7C225B4F83BA3A6F4A2C6F4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +227,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A4617C82ED6E883E696F762 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBLCommonModule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C225B4F83BA3A6F4A2C6F4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NBLCommonModuleTests/Pods-NBLCommonModuleTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Repeat/Repeat.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Repeat.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBLCommonModuleTests/Pods-NBLCommonModuleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF9389808B0ADB1350E9031 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NBLCommonModuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		737F8C3E2146539100DD522A /* Sources */ = {
@@ -343,6 +447,7 @@
 		};
 		737F8C582146539100DD522A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E017F79AB427E5C36E922DFF /* Pods-NBLCommonModule.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -370,6 +475,7 @@
 		};
 		737F8C592146539100DD522A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5320D04DE642E38951FCB778 /* Pods-NBLCommonModule.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -396,6 +502,7 @@
 		};
 		737F8C5B2146539100DD522A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1520A88478688FF7D17695D4 /* Pods-NBLCommonModuleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -415,6 +522,7 @@
 		};
 		737F8C5C2146539100DD522A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A12AE4994973E95B7DAD9F /* Pods-NBLCommonModuleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

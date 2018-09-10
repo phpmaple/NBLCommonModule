@@ -7,13 +7,19 @@
 //
 
 import Foundation
+import Repeat
 
 public class ttt {
-    func test() {
-        print("111")
+    public init() {
+        
     }
-    
-    func test1() {
-        print("22")
+    public func test() {
+        Repeater.every(.seconds(1)) { (repeater) in
+            print(2222)
+        }
+    }
+
+    public func test2() {
+        print(111)
     }
 }
