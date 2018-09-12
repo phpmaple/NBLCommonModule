@@ -437,7 +437,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E017F79AB427E5C36E922DFF /* Pods-NBLCommonModule.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -467,7 +466,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5320D04DE642E38951FCB778 /* Pods-NBLCommonModule.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -496,7 +494,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1520A88478688FF7D17695D4 /* Pods-NBLCommonModuleTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LN46787D;
@@ -518,7 +515,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72A12AE4994973E95B7DAD9F /* Pods-NBLCommonModuleTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4LN46787D;
