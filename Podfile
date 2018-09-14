@@ -6,7 +6,7 @@ target 'NBLCommonModule' do
   use_frameworks!
 
   # Pods for NBLCommonModule
-  pod 'Repeat'
+  #pod 'Repeat'
   
   target 'NBLCommonModuleTests' do
     inherit! :search_paths
