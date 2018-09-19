@@ -41,11 +41,7 @@ struct WeakObjectSet<T: AnyObject>: Sequence {
     }
     
     var allObjects: [T] {
-        #if swift(>=4.1)
-            return objects.compactMap { $0.object }
-        #else
-            return objects.flatMap { $0.object }
-        #endif
+        return objects.compactMap { $0.object }
     }
     
     func contains(_ object: T) -> Bool {
@@ -53,11 +49,14 @@ struct WeakObjectSet<T: AnyObject>: Sequence {
     }
     
     mutating func add(_ object: T) {
-        self.objects.formUnion([WeakObject(object)])
+        add([object])
     }
     
     mutating func add(_ objects: [T]) {
-        self.objects.formUnion(objects.map{WeakObject($0)})
+        // 过滤掉之前已经被释放的对象，防止 Set 集合 formUnion 发现之前不唯一 Crash 的问题
+        var filterNil = Set<WeakObject<T>>(allObjects.map { WeakObject($0) })
+        filterNil.formUnion(objects.map{WeakObject($0)})
+        self.objects = filterNil
     }
     
     mutating func remove(_ object: T) {
