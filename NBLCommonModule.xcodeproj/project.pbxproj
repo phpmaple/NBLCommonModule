@@ -10,6 +10,8 @@
 		7336B7AF214F5F1D0086A9DF /* NBLCommonModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 7336B7AD214F5F1D0086A9DF /* NBLCommonModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7336B7B6214F5F4A0086A9DF /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7336B7B5214F5F4A0086A9DF /* Main.swift */; };
 		7336B7B9214F5F660086A9DF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7336B7B8214F5F660086A9DF /* Alamofire.framework */; };
+		739220D9215252D700744811 /* SwiftNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739220D7215252D700744811 /* SwiftNotificationCenter.swift */; };
+		739220DA215252D700744811 /* WeakObjectSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739220D8215252D700744811 /* WeakObjectSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		7336B7AE214F5F1D0086A9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7336B7B5214F5F4A0086A9DF /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		7336B7B8214F5F660086A9DF /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		739220D7215252D700744811 /* SwiftNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotificationCenter.swift; sourceTree = "<group>"; };
+		739220D8215252D700744811 /* WeakObjectSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakObjectSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		7336B7AC214F5F1D0086A9DF /* NBLCommonModule */ = {
 			isa = PBXGroup;
 			children = (
+				739220D6215252D700744811 /* SwiftNotificationCenter */,
 				7336B7AD214F5F1D0086A9DF /* NBLCommonModule.h */,
 				7336B7B5214F5F4A0086A9DF /* Main.swift */,
 				7336B7AE214F5F1D0086A9DF /* Info.plist */,
@@ -65,6 +70,15 @@
 				7336B7B8214F5F660086A9DF /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		739220D6215252D700744811 /* SwiftNotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				739220D7215252D700744811 /* SwiftNotificationCenter.swift */,
+				739220D8215252D700744811 /* WeakObjectSet.swift */,
+			);
+			path = SwiftNotificationCenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739220DA215252D700744811 /* WeakObjectSet.swift in Sources */,
 				7336B7B6214F5F4A0086A9DF /* Main.swift in Sources */,
+				739220D9215252D700744811 /* SwiftNotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
