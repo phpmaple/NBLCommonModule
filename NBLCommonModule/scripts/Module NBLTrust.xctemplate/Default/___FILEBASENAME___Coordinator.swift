@@ -20,7 +20,7 @@ protocol ___VARIABLE_productName:identifier___StateManagerProtocol {
     func switchPageState(_ state:PageState)
 }
 
-class ___VARIABLE_productName:identifier___Coordinator: <#RootCoordinator#> {
+class ___VARIABLE_productName:identifier___Coordinator: NavCoordinator {
     var store = Store(
         reducer: ___VARIABLE_productName:identifier___Reducer,
         state: nil,
@@ -30,7 +30,11 @@ class ___VARIABLE_productName:identifier___Coordinator: <#RootCoordinator#> {
     var state: ___VARIABLE_productName:identifier___State {
         return store.state
     }
-            
+    
+    override class func start(_ root: BaseNavigationController) -> BaseViewController {
+        return BaseViewController()
+    }
+    
     override func register() {
         Broadcaster.register(___VARIABLE_productName:identifier___CoordinatorProtocol.self, observer: self)
         Broadcaster.register(___VARIABLE_productName:identifier___StateManagerProtocol.self, observer: self)

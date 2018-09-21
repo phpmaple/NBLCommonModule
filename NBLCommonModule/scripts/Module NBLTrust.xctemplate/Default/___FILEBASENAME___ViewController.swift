@@ -84,7 +84,7 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
                 break
                 
             case .error(let error, let reason):
-                self.showToastBox(false, message: error.localizedDescription)
+//                self.showToastBox(false, message: error.localizedDescription)
                 
 //                if reason == PageLoadReason.manualLoadMore {
 //                    self.stopInfiniteScrolling(self.tableView, haveNoMore: false)
