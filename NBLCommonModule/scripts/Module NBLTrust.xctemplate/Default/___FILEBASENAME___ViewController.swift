@@ -102,6 +102,7 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
 //                else if reason == PageLoadReason.manualRefresh {
 //                    self.stopPullRefresh(self.tableView)
 //                }
+                break
             }
         }).disposed(by: disposeBag)
     }
