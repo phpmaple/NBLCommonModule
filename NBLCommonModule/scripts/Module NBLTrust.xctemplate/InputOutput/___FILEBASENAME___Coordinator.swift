@@ -10,12 +10,6 @@ import UIKit
 import ReSwift
 import NBLCommonModule
 import Async
-import HandyJSON
-
-protocol ___VARIABLE_productName:identifier___Context: RouteContext, HandyJSON {
-    init() {}
-    
-}
 
 protocol ___VARIABLE_productName:identifier___CoordinatorProtocol {
 }

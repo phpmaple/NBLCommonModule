@@ -10,6 +10,12 @@ import Foundation
 import ReSwift
 import RxCocoa
 import SwiftyJSON
+import HandyJSON
+
+struct ___VARIABLE_productName:identifier___Context: RouteContext, HandyJSON {
+    init() {}
+    
+}
 
 //MARK: - State
 struct ___VARIABLE_productName:identifier___State: BaseState {

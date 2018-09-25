@@ -14,7 +14,8 @@ import ReSwift
 class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
 
 	var coordinator: (___VARIABLE_productName:identifier___CoordinatorProtocol & ___VARIABLE_productName:identifier___StateManagerProtocol)?
-
+    private(set) var context: ___VARIABLE_productName:identifier___Context?
+    
 	override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,7 +49,7 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
             guard let `self` = self else { return }
             
             if let context = context as? ___VARIABLE_productName:identifier___Context {
-                
+                self.context = context
             }
             
         }).disposed(by: disposeBag)
