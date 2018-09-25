@@ -13,6 +13,7 @@ import SwiftyJSON
 
 //MARK: - State
 struct ___VARIABLE_productName:identifier___State: BaseState {
+    var context: BehaviorRelay<RouteContext?> = BehaviorRelay(value: nil)
     var pageState: BehaviorRelay<PageState> = BehaviorRelay(value: .initial)
 }
 

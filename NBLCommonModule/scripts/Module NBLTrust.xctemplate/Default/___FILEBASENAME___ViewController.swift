@@ -44,6 +44,15 @@ class ___VARIABLE_productName:identifier___ViewController: BaseViewController {
     }
     
     override func configureObserveState() {
+        self.coordinator?.state.context.asObservable().subscribe(onNext: { [weak self] (context) in
+            guard let `self` = self else { return }
+            
+            if let context = context as? ___VARIABLE_productName:identifier___Context {
+                
+            }
+            
+        }).disposed(by: disposeBag)
+        
         self.coordinator?.state.pageState.asObservable().distinctUntilChanged().subscribe(onNext: {[weak self] (state) in
             guard let `self` = self else { return }
             

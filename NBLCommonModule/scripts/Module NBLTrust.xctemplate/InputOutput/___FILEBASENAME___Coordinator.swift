@@ -10,6 +10,12 @@ import UIKit
 import ReSwift
 import NBLCommonModule
 import Async
+import HandyJSON
+
+protocol ___VARIABLE_productName:identifier___Context: RouteContext, HandyJSON {
+    init() {}
+    
+}
 
 protocol ___VARIABLE_productName:identifier___CoordinatorProtocol {
 }
@@ -31,10 +37,14 @@ class ___VARIABLE_productName:identifier___Coordinator: NavCoordinator {
         return store.state
     }
     
-    override class func start(_ root: BaseNavigationController) -> BaseViewController {
-        return BaseViewController()
+    override class func start(_ root: BaseNavigationController, context:RouteContext? = nil) -> BaseViewController {
+        let vc = R.storyboard.<#name#>!
+        let coordinator = ___VARIABLE_productName:identifier___Coordinator(rootVC: root)
+        vc.coordinator = coordinator
+        coordinator.store.dispatch(RouteContextAction(context: context))
+        return vc
     }
-    
+
     override func register() {
         Broadcaster.register(___VARIABLE_productName:identifier___CoordinatorProtocol.self, observer: self)
         Broadcaster.register(___VARIABLE_productName:identifier___StateManagerProtocol.self, observer: self)
