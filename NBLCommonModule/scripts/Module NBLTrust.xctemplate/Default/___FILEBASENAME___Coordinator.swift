@@ -9,7 +9,6 @@
 import UIKit
 import ReSwift
 import NBLCommonModule
-import Async
 
 protocol ___VARIABLE_productName:identifier___CoordinatorProtocol {
 }
@@ -51,7 +50,7 @@ extension ___VARIABLE_productName:identifier___Coordinator: ___VARIABLE_productN
 
 extension ___VARIABLE_productName:identifier___Coordinator: ___VARIABLE_productName:identifier___StateManagerProtocol {
     func switchPageState(_ state:PageState) {
-        Async.main {
+        DispatchQueue.main.async {
             self.store.dispatch(PageStateAction(state: state))
         }
     }
